@@ -37,6 +37,10 @@ namespace WPFH1
                 grid.Children.Remove(btn);
                 Title = btn!.Content.ToString();
             }
+
+            if(grid.Children.Count ==  0)
+                MessageBox.Show(@"That is All!
+Thanks For Using Our Program","Congratualations",MessageBoxButton.OK,MessageBoxImage.Information);
         }
     }
 }
